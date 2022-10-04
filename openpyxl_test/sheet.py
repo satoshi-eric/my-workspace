@@ -34,6 +34,8 @@ ws = wb.active
 for row in ws.values:
     print(row)
 
+# Criando lista de dicionário
+
 dados = []
 values = list(ws.values)
 headers = values[0]
@@ -42,3 +44,13 @@ for row in values:
 
 for row in dados:
     print(row)
+
+# Inserindo linhas
+
+wb = load_workbook('sheet.xlsx')
+ws = wb.active
+
+ws.insert_rows(3)
+ws.delete_cols(3)
+
+wb.save('insert_sheet.xlsx')
