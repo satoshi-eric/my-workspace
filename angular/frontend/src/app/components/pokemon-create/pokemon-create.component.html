@@ -1,0 +1,7 @@
+<form>
+  <label for="name">Nome:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="pokemon.name">
+  <label for="type">Tipo: </label>
+  <input type="text" id="type" name="type" [(ngModel)]="pokemon.type">
+  <input type="button" value="Criar" (click)="createProduct()">
+</form>
